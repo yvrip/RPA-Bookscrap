@@ -27,15 +27,16 @@ try:
                     "Digite a quantidade de estrelas da classificação do livro (1 a 5): "
                 )
             )
-            break
+
+            print(inputRating)
+            # Verifica se o número de estrelas enviado pelo usuário é menor ou igual à cinco, o limite de estrelas do site
+            if inputRating <= 5 and inputRating >= 0:
+                break
+            else:
+                print("Número de estrelas inexistente")
+                continue
         except:
             print("Digite um número inteiro")
-
-    # Verifica se o número de estrelas enviado pelo usuário é menor ou igual à cinco, o limite de estrelas do site
-    if inputRating <= 5:
-        pass
-    else:
-        sys.exit("Número de estrelas inexistente")
 
     # Realiza tratativas para utilizar as informações enviadas pelos usuários
     CategoryList = inputCategory.split(",")
