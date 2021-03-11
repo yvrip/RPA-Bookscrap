@@ -28,7 +28,6 @@ try:
                 )
             )
 
-            print(inputRating)
             # Verifica se o número de estrelas enviado pelo usuário é menor ou igual à cinco, o limite de estrelas do site
             if inputRating <= 5 and inputRating >= 0:
                 break
